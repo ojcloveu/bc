@@ -36,7 +36,9 @@ contract('DappToken', function(accounts) {
             tokenInstance = instance;
             return tokenInstance.transfer.call(accounts[1],amount*99999999999999999,{from:accounts[0]});
         }).then(assert.fail).catch(function(error){
-            // assert(error.message.indexOf('revert') >= 0, error.message.indexOf('revert'))
+            // assert(error.
+            
+            message.indexOf('revert') >= 0, error.message.indexOf('revert'))
             return tokenInstance.transfer.call(accounts[1],amount,{from:accounts[0]});
         }).then(function(success){
             assert.equal(success,true,'it return true');
